@@ -333,3 +333,74 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 }
+/* =================================
+   PÁGINAS INTERNAS
+================================= */
+
+.page-main {
+  padding: 54px 0 72px;
+  min-height: 65vh;
+}
+
+.page-main h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -.045em;
+  margin-bottom: 20px;
+}
+
+.page-main h2 {
+  margin-top: 32px;
+  font-size: 1.35rem;
+}
+
+.page-main p,
+.page-main li {
+  color: #46516a;
+}
+
+.page-main a {
+  font-weight: 600;
+}
+
+/* Caixa de contato */
+
+.contact-placeholder {
+  padding: 22px;
+  border: 1px dashed #aab5cc;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #647089;
+  margin: 22px 0;
+}
+
+.contact-placeholder p {
+  margin-bottom: 0;
+}
+
+/* Avisos */
+
+.notice {
+  border-left: 4px solid #3157d5;
+  padding: 14px 18px;
+  background: #edf1ff;
+  border-radius: 0 12px 12px 0;
+  color: #34436d;
+  margin-top: 24px;
+}
+
+/* Melhor leitura no celular */
+
+@media (max-width: 760px) {
+  .page-main {
+    padding: 38px 0 55px;
+  }
+  
+  .page-main h1 {
+    font-size: 2.1rem;
+  }
+  
+  .contact-placeholder {
+    padding: 17px;
+  }
+}
